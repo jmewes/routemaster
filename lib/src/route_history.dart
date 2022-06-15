@@ -15,6 +15,10 @@ class RouteHistory {
   /// Whether there's a forward chronological history entry.
   bool get canGoForward => _index < _history.length - 1;
 
+  List<RouteData> get history {
+    return _history;
+  }
+
   /// Goes back in chronological navigation order.
   ///
   /// Returns `true` if the navigation was successful, or `false` if it wasn't.
